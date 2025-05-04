@@ -64,6 +64,22 @@ export default function TabLayout() {
           headerShown: false,
         }}
       />
+      <Tabs.Screen
+        name="otp"
+        options={{
+          href: null,
+          tabBarStyle: { display: 'none' },
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="forgot"
+        options={{
+          href: null,
+          tabBarStyle: { display: 'none' },
+          headerShown: false,
+        }}
+      />
     </Tabs>
   );
 }

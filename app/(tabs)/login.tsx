@@ -12,7 +12,7 @@ export default function LoginScreen() {
         <Input placeholder="Email" keyboardType="email-address" autoCapitalize="none" style={styles.input} />
         <Input placeholder="Password" secureTextEntry style={styles.input} />
         <Button title="Login" style={styles.button} onPress={() => {}} />
-        <TouchableOpacity style={styles.forgotBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.forgotBtn} onPress={() => router.push('/forgot')}>
           <Text style={styles.forgotText}>Forgot password?</Text>
         </TouchableOpacity>
         <View style={styles.signupRow}>
