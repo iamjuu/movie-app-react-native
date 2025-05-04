@@ -1,20 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function AboutScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>About Screen</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-2xl font-bold text-blue-600">About Screen</Text>
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 24,
-  },
-}); 
+} 
