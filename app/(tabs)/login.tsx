@@ -10,7 +10,7 @@ export default function LoginScreen() {
         <Text style={styles.title}>Welcome Back!</Text>
         <Text style={styles.subtitle}>Login to your account</Text>
         <Input placeholder="Email" keyboardType="email-address" autoCapitalize="none" style={styles.input} />
-        <Input placeholder="Password" secureTextEntry style={styles.input} />
+        <Input placeholder="Password" isPassword style={styles.input} />
         <Button title="Login" style={styles.button} onPress={() => {}} />
         <TouchableOpacity style={styles.forgotBtn} onPress={() => router.push('/forgot')}>
           <Text style={styles.forgotText}>Forgot password?</Text>

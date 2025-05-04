@@ -11,7 +11,7 @@ export default function SignupScreen() {
         <Text style={styles.subtitle}>Sign up to get started</Text>
         <Input placeholder="Name" style={styles.input} />
         <Input placeholder="Email" keyboardType="email-address" autoCapitalize="none" style={styles.input} />
-        <Input placeholder="Password" secureTextEntry style={styles.input} />
+        <Input placeholder="Password" isPassword style={styles.input} />
         <Button title="Sign Up" style={styles.button} onPress={() => {}} />
         <View style={styles.loginRow}>
           <Text style={styles.loginText}>Already have an account? </Text>
