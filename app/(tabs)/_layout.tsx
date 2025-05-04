@@ -2,16 +2,25 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
+import { StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const insets = useSafeAreaInsets();
 
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: '#007AFF',
         tabBarInactiveTintColor: '#8E8E93',
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: '#F8F8F8',
+        },
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
       }}>
       <Tabs.Screen
         name="index"
@@ -44,3 +53,17 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+  tabBar: {
+    backgroundColor: '#FFFFFF',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+});
